@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/loginViewsMargin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:textAlignment="center"
+            android:id="@+id/heading_dialogboxproduct"
+            android:textColor="@color/black"
+            android:textSize="@dimen/headerTextSize"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:textColorHint="@color/text">
+
+            <EditText
+                android:id="@+id/p_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:hint="@string/product_name"
+                android:maxLines="1"
+                android:textSize="@dimen/newsMoreTextSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:id="@+id/p_id"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            android:padding="11dp"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="@string/product_category"
+                android:textColor="@color/text"
+                android:textSize="14dp" />
+
+            <Spinner
+                android:id="@+id/productcategory_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            android:padding="11dp"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="@string/product_status"
+                android:textColor="@color/text"
+                android:textSize="14dp" />
+
+            <Spinner
+                android:id="@+id/productstatus_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4" />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:textColorHint="@color/text">
+
+            <EditText
+                android:id="@+id/p_mrp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:hint="@string/product_mrp"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textSize="@dimen/newsMoreTextSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/product_icon"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_baseline_account_circle_24" />
+
+            <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
+                 android:id="@+id/edit_producticon"
+                 android:layout_width="wrap_content"
+                 android:layout_height="50dp"
+                 android:layout_alignEnd="@+id/product_icon"
+                 android:layout_alignParentTop="true"
+                 android:backgroundTint="@color/edittextbg"
+                 android:src="@drawable/ic_baseline_edit_24" />-->
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <Button
+                android:id="@+id/btn_close_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="5"
+                android:text="@string/close" />
+
+            <Button
+                android:id="@+id/btn_updateproduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="5" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

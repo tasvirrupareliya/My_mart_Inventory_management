@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/cancel_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:background="@drawable/round"
+            android:src="@drawable/ic_baseline_close_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvsup_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/suppliertextsize" />
+
+            <TextView
+                android:id="@+id/tvsup_cname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/suppliertextsize" />
+
+            <TextView
+                android:id="@+id/tvsup_website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:linksClickable="true"
+                android:textSize="@dimen/suppliertextsize" />
+
+            <TextView
+                android:id="@+id/tvsup_fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/suppliertextsize" />
+
+            <TextView
+                android:id="@+id/tvsup_lname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/suppliertextsize" />
+
+            <TextView
+                android:id="@+id/tvsup_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/suppliertextsize" />
+
+            <TextView
+                android:id="@+id/tvsup_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/suppliertextsize" />
+
+            <TextView
+                android:id="@+id/tvsup_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/suppliertextsize" />
+
+            <TextView
+                android:id="@+id/tvsup_add1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/suppliertextsize" />
+
+            <TextView
+                android:id="@+id/tvsup_add2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/suppliertextsize" />
+
+            <TextView
+                android:id="@+id/tvsup_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/suppliertextsize" />
+
+            <TextView
+                android:id="@+id/tvsup_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/suppliertextsize" />
+
+            <TextView
+                android:id="@+id/tvsup_pincode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/suppliertextsize" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

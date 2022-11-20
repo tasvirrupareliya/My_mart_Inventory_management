@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.project.mymart.ui.dashboard.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_feedback"
+        android:name="com.project.mymart.ui.profile.ProfileFragment"
+        android:label="@string/feedback"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_categories"
+        android:name="com.project.mymart.ui.category.CategoryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_category" />
+
+    <fragment
+        android:id="@+id/nav_product"
+        android:name="com.project.mymart.ui.product.ProductFragment"
+        android:label="@string/add_product"
+        tools:layout="@layout/fragment_product" />
+
+    <fragment
+        android:id="@+id/nav_supplier"
+        android:name="com.project.mymart.ui.supplier.SupplierFragment"
+        android:label="@string/supplier"
+        tools:layout="@layout/fragment_supplier" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.project.mymart.ui.logout.LogoutFragment"
+        android:label="@string/logout"
+        tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/nav_stock"
+        android:name="com.project.mymart.ui.stock.StockFragment"
+        android:label="@string/stock"
+        tools:layout="@layout/fragment_stock" />
+
+    <fragment
+        android:id="@+id/nav_report"
+        android:name="com.project.mymart.ui.reports.Sales_ReportFragment"
+        android:label="@string/reports"
+        tools:layout="@layout/fragment_salesreport"/>
+
+</navigation>
